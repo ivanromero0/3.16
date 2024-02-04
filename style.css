@@ -16,6 +16,10 @@ form {
     position: relative;
     left: 40%;
 }
+form.dos {
+    position: relative;
+    left: 35%;
+}
 
 input.cajados {
     width: 500px;
