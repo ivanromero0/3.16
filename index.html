@@ -11,17 +11,18 @@
 
 <h3>Formulario 1</h3>
     <form action="web.php" method="get">
-<p>Elige tu documento <br>
+        <h3>Accede a tu Área Clientes</h3>
+<p>Elige tu documento <br><br>
     <input type="radio" name="documento"> DNI o Tarjeta de residencia <br>
     <input type="radio" name="documento"> Pasaporte
 </p>
 <p>
     Número de documento <br>
-    <input type="text" name="numero" id="numero">
+    <input type="text" name="numero" id="numero" class="caja">
 </p>
 <p>
     Fecha de nacimiento <br>
-    <input type="date">
+    <input type="date" class="caja">
 </p>
 <input type="checkbox"> Recordar
 <br><br>
@@ -29,8 +30,52 @@
 
     </form>
 
+<br>
+    <hr>
 
+<center><h2>Formulario2</h2></center>
 
+<form action="web.php" method="get">
+    <h2>Empieza creando tu usuario</h2>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre (como sale en el DNI)" class="cajados"> <br>
+<br>
+    <input type="text" id="apellido2" name="apellido2" placeholder="1º apellido (como sale en el DNI)" class="cajatres">
+    &nbsp&nbsp<input type="text" id="apellido2" name="apellido2" placeholder="2º apellido (como sale en el DNI)" class="cajatres">
+<br><br>
+    <select name="documento" id="documento">
+        <option value="DNI">DNI</option>
+        <option value="NIF">NIF</option>
+        <option value="CERT.AEAT">CERT.AEAT</option>
+    </select>
+    &nbsp&nbsp<input type="text" id="n.doc" name="n.doc" placeholder="Número de documento" class="cajatres">
+    <br><br><input type="text" id="telef" name="telef" placeholder="Móvil" class="cajatres">
+    &nbsp&nbsp<input type="email" id="email" name="email" placeholder="email" class="cajatres">
+</form>
+
+<hr>
+
+<form action="web.php" method="get">
+    <h3>¿Eres nuevo?</h3>
+    <p>Regístrate para guardar tu información y hacer <br>tus pedidos de forma más fácil</p>
+    <br>
+Email <br>
+    <input type="email" name="email" id="email" placeholder="Introduce tu email" class="cajacuatro">
+<br><br>
+Teléfono <br>
+<input type="text" placeholder="Tu teléfono" class="cajacuatro">
+<br><br>
+Contraseña <br>
+<input type="password" placeholder="Introduce tu contraseña" class="cajacuatro">
+<br><br>
+Confirma tu contraseña <br>
+<input type="password" placeholder="Confirma tu contraseña" class="cajacuatro">
+<br><br>
+<input type="checkbox"> He leído y acepto <u>Política de privacidad</u> <br>
+<input type="checkbox"> Sí, acepto recibir comunicaciones comerciales <br> &nbsp&nbsp y ofertas personalizadas según mi perfil</u>
+<br><br>
+<input type="submit" class="enviardos">
+
+</form>
 
 </body>
 </html>
